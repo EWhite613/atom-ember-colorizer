@@ -62,14 +62,16 @@ atom-text-editor .search-results .marker.current-result .region,
   border: 1px solid @syntax-result-marker-color-selected;
 }
 // Handlebar
-.handlebar, .meta.tag.other.handlebar , .keyword.other.handlebar, .string.quoted.handlebar {
+.handlebar, .meta.tag.other.handlebar , .keyword.other.handlebar, .string.quoted.handlebar, .block.slots.keyword.other.handlebar {
   color: #1E88E5;
 }
 // HTML Tags
 .punctuation.definition.tag.end.html, .punctuation.definition.tag.begin.html, .entity.name.tag.html {
   color: #90A4AE;
 }
-
+.atom-background-color {
+  background-color: @syntax-background-color
+}
 // comment
 .comment, .string.quoted.double.block.python {
   color: #546E7A;
@@ -88,6 +90,10 @@ atom-text-editor .search-results .marker.current-result .region,
 // Component
 .component, .string.quoted.component, .support.function.component{
   color: #FFA726;
+}
+
+.block.slots {
+  background-color: rgba(233, 245, 0, 0.5);
 }
 
 // Data
